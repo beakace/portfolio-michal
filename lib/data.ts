@@ -39,7 +39,7 @@ export const experiencesData = [
     description:
       "I created a Blog page from scratch using Wordpress for my company while being a Marketing Manager.",
     icon: React.createElement(BsWordpress),
-    date: "2021-2022",
+    date: "2021 - 2022",
   },
   {
     title: "Junior Front-End Developer - Internship",
@@ -47,7 +47,7 @@ export const experiencesData = [
     description:
       "I worked as a front-end developer for administration application for non-profit organization.",
     icon: React.createElement(FaReact),
-    date: "2021-2022",
+    date: "2021 - 2022",
   },
   {
     title: "Junior Front-End Developer - part time",
