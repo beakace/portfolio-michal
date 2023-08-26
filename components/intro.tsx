@@ -56,11 +56,18 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "tween", duration: 0.2 }}
       >
-        <span className="font-bold">Hello, I'm Michał.</span> I'm a{" "}
-        <span className="font-bold">front-end developer</span> with{" "}
-        <span className="font-bold">28 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Hello, I'm Michał. </span>
+        I'm a passionate and creative{" "}
+        <span className="font-bold">front-end developer.</span>{" "}
+        <span className="italic"> Excited </span>
+        <span>
+          <span>to take on new challenges in the field, and </span>{" "}
+          <span className="italic"> dedicated</span> to crafting{" "}
+          <span className="font-semibold">visually appealing </span> and{" "}
+          <span className="font-semibold">user-friendly</span> interfaces.
+        </span>{" "}
+        <br></br>
+        My focus is <span className="underline">React (Next.js)</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"

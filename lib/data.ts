@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import alma from "@/public/alma-placeholder.png";
+import kalkulacjaLeasingu from "@/public/kalkulacja-leasingu-placeholder.png";
+import searchGithub from "@/public/search-github-placeholder.png";
+import { BsWordpress } from "react-icons/bs";
 
 export const links = [
   {
@@ -35,26 +39,26 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Wordpress Blog - Sun Seasons 24",
+    location: "Wrocław, PL",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I created a Blog page from scratch using Wordpress for my company while being Marketing Manager",
+    icon: React.createElement(BsWordpress),
+    date: "2021 - 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Junior Front-End Developer - Internship",
+    location: "Wrocław, PL",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I worked as a front-end developer for administration application for non-profit organization",
+    icon: React.createElement(FaReact),
+    date: "2021 - 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Junior Front-End Developer - kalkulacja-leasingu.pl",
+    location: "Wrocław, PL",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I worked as a front-end developer for a website that compares leasing offers",
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
@@ -62,25 +66,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Kalkulacja Leasingu",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    tags: ["React", "Next.js", "Tailwind", "React Markdown"],
+    imageUrl: kalkulacjaLeasingu,
   },
   {
-    title: "rmtDev",
+    title: "Alma Admin App",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    tags: ["React", "TypeScript", "Remix", "Material UI", "Prisma"],
+    imageUrl: alma,
   },
   {
-    title: "Word Analytics",
+    title: "Search Github",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    tags: ["React", "Material UI", "TypeScript"],
+    imageUrl: searchGithub,
   },
 ] as const;
 
@@ -91,17 +95,11 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
+  "Remix",
+  "Wordpress",
   "Git",
   "Tailwind",
+  "MaterialUI",
   "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
