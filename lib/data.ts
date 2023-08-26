@@ -1,10 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import alma from "@/public/alma-placeholder.png";
 import kalkulacjaLeasingu from "@/public/kalkulacja-leasingu-placeholder.png";
 import searchGithub from "@/public/search-github-placeholder.png";
@@ -44,7 +39,7 @@ export const experiencesData = [
     description:
       "I created a Blog page from scratch using Wordpress for my company while being a Marketing Manager.",
     icon: React.createElement(BsWordpress),
-    date: "2021 - 2022",
+    date: "2021-2022",
   },
   {
     title: "Junior Front-End Developer - Internship",
@@ -52,7 +47,7 @@ export const experiencesData = [
     description:
       "I worked as a front-end developer for administration application for non-profit organization.",
     icon: React.createElement(FaReact),
-    date: "2021 - 2022",
+    date: "2021-2022",
   },
   {
     title: "Junior Front-End Developer - part time",
@@ -60,7 +55,7 @@ export const experiencesData = [
     description:
       "I worked as a front-end developer on a website specializing in lease comparisons.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - present",
   },
 ] as const;
 
@@ -68,21 +63,21 @@ export const projectsData = [
   {
     title: "Kalkulacja Leasingu",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "A website specializing in lease comparisons. Lots of various products. My first commercial project",
     tags: ["React", "Next.js", "Tailwind", "React Markdown"],
     imageUrl: kalkulacjaLeasingu,
   },
   {
     title: "Alma Admin App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Admin app for organizers of non-profit conference. I developed most of it and the app is currently in use in real life.",
     tags: ["React", "TypeScript", "Remix", "Material UI", "Prisma"],
     imageUrl: alma,
   },
   {
     title: "Search Github",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "App for searching github repositories. My first real react app not built with tutorials. This was my internship entry assignment.",
     tags: ["React", "Material UI", "TypeScript"],
     imageUrl: searchGithub,
   },
