@@ -11,6 +11,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  href,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -46,12 +47,14 @@ export default function Project({
             ))}
           </ul>
         </div>
-        <Image
-          className="absolute hidden top-8 sm:block -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2  transition group-hover:scale-[1.04]"
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-        ></Image>
+        <a href={href} target="_blank">
+          <Image
+            className="absolute hidden top-8 sm:block -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2  transition group-hover:scale-[1.04]"
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+          ></Image>
+        </a>
       </section>
     </motion.div>
   );
