@@ -39,10 +39,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Wordpress Blog - Sun Seasons 24",
+    title: "Wordpress Blog",
     location: "Wrocław, PL",
     description:
-      "I created a Blog page from scratch using Wordpress for my company while being Marketing Manager",
+      "I created a Blog page from scratch using Wordpress for my company while being a Marketing Manager.",
     icon: React.createElement(BsWordpress),
     date: "2021 - 2022",
   },
@@ -50,15 +50,15 @@ export const experiencesData = [
     title: "Junior Front-End Developer - Internship",
     location: "Wrocław, PL",
     description:
-      "I worked as a front-end developer for administration application for non-profit organization",
+      "I worked as a front-end developer for administration application for non-profit organization.",
     icon: React.createElement(FaReact),
     date: "2021 - 2022",
   },
   {
-    title: "Junior Front-End Developer - kalkulacja-leasingu.pl",
+    title: "Junior Front-End Developer - part time",
     location: "Wrocław, PL",
     description:
-      "I worked as a front-end developer for a website that compares leasing offers",
+      "I worked as a front-end developer on a website specializing in lease comparisons.",
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },

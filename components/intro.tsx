@@ -27,8 +27,8 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              className="rounded-full h-24 w-24 border-[0.35rem] object-cover border-white shadow-xl"
-              src="/portrait_small.png"
+              className="rounded-full h-36 w-36 border-[0.35rem] object-cover border-white shadow-xl"
+              src="/portrait-portfolio.png"
               alt="Portrait"
               width={192}
               height={192}
