@@ -4,6 +4,7 @@ import alma from "@/public/alma-placeholder.png";
 import kalkulacjaLeasingu from "@/public/kalkulacja-leasingu-placeholder.png";
 import searchGithub from "@/public/search-github-card.png";
 import { BsWordpress } from "react-icons/bs";
+import blogSS24 from "@/public/blog-ss24.png";
 
 export const links = [
   {
@@ -34,12 +35,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Wordpress Blog",
+    title: "Junior Front-End Developer - part time",
     location: "Wrocław, PL",
     description:
-      "I created a Blog page from scratch using Wordpress for my company while being a Marketing Manager.",
-    icon: React.createElement(BsWordpress),
-    date: "2021 - 2022",
+      "I worked as a front-end developer on a website specializing in lease comparisons.",
+    icon: React.createElement(FaReact),
+    date: "2022 - present",
   },
   {
     title: "Junior Front-End Developer - Internship",
@@ -50,12 +51,12 @@ export const experiencesData = [
     date: "2021 - 2022",
   },
   {
-    title: "Junior Front-End Developer - part time",
+    title: "Wordpress Blog",
     location: "Wrocław, PL",
     description:
-      "I worked as a front-end developer on a website specializing in lease comparisons.",
-    icon: React.createElement(FaReact),
-    date: "2022 - present",
+      "I created a Blog page from scratch using Wordpress for my company while being a Marketing Manager.",
+    icon: React.createElement(BsWordpress),
+    date: "2021 - 2022",
   },
 ] as const;
 
@@ -83,6 +84,14 @@ export const projectsData = [
     tags: ["React", "Material UI", "TypeScript"],
     imageUrl: searchGithub,
     href: "https://search-github-black.vercel.app/",
+  },
+  {
+    title: "Blog Sun Seasons 24",
+    description:
+      "I build blog page on Wordpress from scratch for my as I side job for my company. This sparked my interest in Frontend Development",
+    tags: ["Wordpress"],
+    imageUrl: blogSS24,
+    href: "https://blog.sunseasons24.pl/",
   },
 ] as const;
 
