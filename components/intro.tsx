@@ -28,10 +28,10 @@ export default function Intro() {
           >
             <Image
               className="rounded-full h-24 w-24 border-[0.35rem] object-cover border-white shadow-xl"
-              src="/portrait-portfolio.png"
+              src="/portrait-final-michal.png"
               alt="Portrait"
-              width={192}
-              height={192}
+              width={901}
+              height={901}
               priority={true}
             />
           </motion.div>
@@ -88,7 +88,7 @@ export default function Intro() {
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/CV-Michal-Dziuba.pdf"
           download
         >
           Download CV
@@ -96,7 +96,7 @@ export default function Intro() {
         </a>
         <a
           className="bg-white text-gray-700 px-4 py-3 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:text-white/60 dark:bg-white/10"
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/micha%C5%82-dziuba-34650b183/"
           target="_blank"
         >
           <BsLinkedin />
