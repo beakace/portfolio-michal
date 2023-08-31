@@ -88,7 +88,7 @@ export const projectsData = [
   {
     title: "Blog Sun Seasons 24",
     description:
-      "I build blog page on Wordpress from scratch for my as I side job for my company. This sparked my interest in Frontend Development",
+      "I build this blog page on Wordpress from scratch as a side job for my company. This sparked my interest in Frontend Development",
     tags: ["Wordpress"],
     imageUrl: blogSS24,
     href: "https://blog.sunseasons24.pl/",
