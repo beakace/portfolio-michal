@@ -64,10 +64,10 @@ export const projectsData = [
   {
     title: "Kalkulacja Leasingu",
     description:
-      "A website specializing in lease comparisons. Lots of various products. My first commercial project",
+      "A website specializing in lease comparisons. Lots of various products. My first commercial project. Link to the actual page will be active as soon as the site is published",
     tags: ["React", "Next.js", "Tailwind", "React Markdown"],
     imageUrl: kalkulacjaLeasingu,
-    href: "google.com",
+    href: "/",
   },
   {
     title: "Alma Admin App",
@@ -75,7 +75,7 @@ export const projectsData = [
       "Admin app for organizers of non-profit conference. I developed most of it and the app is currently in use in real life.",
     tags: ["React", "TypeScript", "Remix", "Material UI", "Prisma"],
     imageUrl: alma,
-    href: "google.com",
+    href: "https://github.com/beakace/alma-admin-app",
   },
   {
     title: "Search Github",
