@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: "Kalkulacja Leasingu",
     description:
-      "A website specializing in lease comparisons. Lots of various products. My first commercial project. Link to the actual page will be active as soon as the site is published",
+      "A website specializing in lease comparisons. My first commercial project. Link to the actual page will be active as soon as the site is published",
     tags: ["React", "Next.js", "Tailwind", "React Markdown"],
     imageUrl: kalkulacjaLeasingu,
     href: "/",
