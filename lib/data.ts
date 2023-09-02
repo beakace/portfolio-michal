@@ -1,7 +1,7 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import alma from "@/public/alma-placeholder.png";
-import kalkulacjaLeasingu from "@/public/kalkulacja-leasingu-placeholder.png";
+import kalkulacjaLeasingu from "@/public/blur-photo.png";
 import searchGithub from "@/public/search-github-card.png";
 import { BsWordpress } from "react-icons/bs";
 import blogSS24 from "@/public/blog-ss24.png";
@@ -62,9 +62,9 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Kalkulacja Leasingu",
+    title: "Release date - October",
     description:
-      "A website specializing in lease comparisons. My first commercial project. Link to the actual page will be active as soon as the site is published",
+      "A website specializing in financing area. My first commercial project. Link to the actual page will be active as soon as the site is published.",
     tags: ["React", "Next.js", "Tailwind", "React Markdown"],
     imageUrl: kalkulacjaLeasingu,
     href: "/",
