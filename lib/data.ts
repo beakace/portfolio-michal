@@ -62,7 +62,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Release date - October",
+    title: "Kalkulacja Leasingu",
     description:
       "A website specializing in financing area. My first commercial project. Link to the actual page will be active as soon as the site is published.",
     tags: ["React", "Next.js", "Tailwind", "React Markdown"],
