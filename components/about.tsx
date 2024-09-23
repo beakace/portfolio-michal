@@ -27,9 +27,9 @@ export default function About() {
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
-        is <span className="font-medium">React, Next.js</span>. I am also
-        familiar with Remix, TypeScript and Prisma. I am always looking to learn
-        new technologies. I am currently looking for a{" "}
+        is <span className="font-medium">React (Next.js, Remix), Tailwind</span>
+        . I am also familiar with TypeScript and Prisma. I am always looking to
+        learn new technologies. I am currently open for offers for{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
@@ -38,8 +38,8 @@ export default function About() {
           I'm a happy husband and a father of{" "}
           <span className="font-bold">TWO</span> two year old boys
         </span>
-        . Currently my fulltime job is being a Revenue Manager and also before I
-        started coding I was a part time professional musician but now in my
+        . Currently my fulltime job is being an IT Project Manager. Also before
+        I started coding I was a part time professional musician but now in my
         free time I focus on being a better programmer. I love{" "}
         <span className="font-medium">learning new things</span>.
       </p>
