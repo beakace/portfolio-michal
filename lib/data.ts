@@ -5,6 +5,7 @@ import kalkulacjaLeasingu from "@/public/kalkulacjaleasingu.pl.png";
 import searchGithub from "@/public/search-github-card.png";
 import { BsWordpress } from "react-icons/bs";
 import blogSS24 from "@/public/blog-ss24.png";
+import nieziemsko from "@/public/nieziemsko.png";
 
 export const links = [
   {
@@ -61,6 +62,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Nieziemsko",
+    description:
+      "A landing page for a organization that focuses on connecting people who want to discuss topics of their interests",
+    tags: ["React", "Next.js", "Tailwind"],
+    imageUrl: nieziemsko,
+    href: "https://nieziemsko.com",
+  },
   {
     title: "Kalkulacja Leasingu",
     description:
