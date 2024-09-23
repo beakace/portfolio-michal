@@ -58,7 +58,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Michał. </span>
         I'm a passionate and creative{" "}
-        <span className="font-bold">front-end developer.</span>{" "}
+        <span className="font-bold">React developer.</span>{" "}
         <span className="italic"> Excited </span>
         <span>
           <span>to take on new challenges in the field, and </span>{" "}
@@ -66,8 +66,6 @@ export default function Intro() {
           <span className="font-semibold">visually appealing </span> and{" "}
           <span className="font-semibold">user-friendly</span> interfaces.
         </span>{" "}
-        <br></br>
-        My focus is <span className="underline">React (Next.js)</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -88,7 +86,7 @@ export default function Intro() {
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV-Michal-Dziuba.pdf"
+          href="/Michal-Dziuba-DEVELOPER.pdf"
           download
         >
           Download CV

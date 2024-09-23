@@ -36,10 +36,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Junior Front-End Developer - part time",
+    title: "React Developer - freelance",
     location: "Wrocław, PL",
     description:
-      "I worked as a front-end developer on a website specializing in lease comparisons.",
+      "I am currently a freelance React Developer having worked on multiple projects",
     icon: React.createElement(FaReact),
     date: "2022 - present",
   },
@@ -65,7 +65,7 @@ export const projectsData = [
   {
     title: "Nieziemsko",
     description:
-      "A landing page for a organization that focuses on connecting people who want to discuss topics of their interests",
+      "I developed a landing page from scratch for an organization using Next.js. The project demanded swift and efficient work, and I am pleased that I was able to deliver the final product in a short timeframe.",
     tags: ["React", "Next.js", "Tailwind"],
     imageUrl: nieziemsko,
     href: "https://nieziemsko.com",
@@ -73,13 +73,13 @@ export const projectsData = [
   {
     title: "Kalkulacja Leasingu",
     description:
-      "A website specializing in financing area. My first big commercial project. Built to be lighting fast and perfectly optimized for SEO.",
-    tags: ["React", "Next.js", "Tailwind", "ReactMarkdown"],
+      "I coded the entire front-end of a website for a company specializing in lease comparisons. It included numerous subpages, requiring significant effort and a strong command of CSS and Next.js.",
+    tags: ["React", "Next.js", "Tailwind"],
     imageUrl: kalkulacjaLeasingu,
     href: "https://kalkulacjaleasingu.pl",
   },
   {
-    title: "Alma Admin App",
+    title: "Admin App",
     description:
       "Admin app for organizers of non-profit conference. I developed most of it and the app is currently in use in real life.",
     tags: ["React", "TypeScript", "Remix", "Material UI", "Prisma"],
