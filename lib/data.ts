@@ -6,6 +6,7 @@ import searchGithub from "@/public/search-github-card.png";
 import { BsWordpress } from "react-icons/bs";
 import blogSS24 from "@/public/blog-ss24.png";
 import nieziemsko from "@/public/nieziemsko.png";
+import chordon from "@/public/chordon-app.png";
 
 export const links = [
   {
@@ -36,15 +37,15 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "React Developer - freelance",
+    title: "Frontend Developer - freelance",
     location: "Wrocław, PL",
     description:
-      "I am currently a freelance React Developer having worked on multiple projects",
+      "I am currently a freelance Frontend Developer having worked on multiple real-life projects.",
     icon: React.createElement(FaReact),
     date: "2022 - present",
   },
   {
-    title: "Junior Front-End Developer - Internship",
+    title: "Junior Frontend Developer - Internship",
     location: "Wrocław, PL",
     description:
       "I worked as a front-end developer for administration application for non-profit organization.",
@@ -77,6 +78,14 @@ export const projectsData = [
     tags: ["React", "Next.js", "Tailwind"],
     imageUrl: kalkulacjaLeasingu,
     href: "https://kalkulacjaleasingu.pl",
+  },
+  {
+    title: "Chordon",
+    description:
+      "A chord progression generator that helps musicians create unique progressions. Integrated with the Hooktheory API for music theory analysis and suggestions.",
+    tags: ["React", "Next.js", "Tailwind", "Framer Motion", "Hooktheory API"],
+    imageUrl: chordon,
+    href: "https://chordon.vercel.app",
   },
   {
     title: "Admin App",
@@ -112,6 +121,7 @@ export const skillsData = [
   "React",
   "Next.js",
   "Remix",
+  "ERB",
   "Wordpress",
   "Git",
   "Tailwind",

@@ -38,10 +38,10 @@ export default function About() {
           I'm a happy husband and a father of{" "}
           <span className="font-bold">TWO</span> two year old boys
         </span>
-        . Currently my fulltime job is being an IT Project Manager. Also before
-        I started coding I was a part time professional musician but now in my
-        free time I focus on being a better programmer. I love{" "}
-        <span className="font-medium">learning new things</span>.
+        . Currently my previous contract ended and I am looking for a new
+        position. Also before I started coding I was a part time professional
+        musician but now in my free time I focus on being a better programmer. I
+        love <span className="font-medium">learning new things</span>.
       </p>
     </motion.section>
   );
