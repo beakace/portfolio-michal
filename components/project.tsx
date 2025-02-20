@@ -4,15 +4,17 @@ import Image from "next/image";
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import { motion } from "framer-motion";
+import { Project as ProjectType } from "@/lib/types";
 
-type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
+  imageWidth,
+  imageHeight,
   href,
-}: ProjectProps) {
+}: ProjectType) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -49,12 +51,18 @@ export default function Project({
               ))}
             </ul>
           </div>
-          <Image
-            className="absolute hidden top-8 sm:block -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2  transition group-hover:scale-[1.04]"
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={95}
-          ></Image>
+          {imageUrl ? (
+            <Image
+              className="absolute hidden top-8 sm:block -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2  transition group-hover:scale-[1.04]"
+              src={imageUrl}
+              alt={title}
+              quality={95}
+              width={imageWidth}
+              height={imageHeight}
+            ></Image>
+          ) : (
+            <p>No image available</p>
+          )}
         </a>
       </section>
     </motion.div>
