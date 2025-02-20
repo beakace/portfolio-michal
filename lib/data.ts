@@ -7,16 +7,7 @@ import { BsWordpress } from "react-icons/bs";
 import blogSS24 from "@/public/blog-ss24.png";
 import nieziemsko from "@/public/nieziemsko.png";
 import chordon from "@/public/chordon-app.png";
-import { sanityFetch } from "./sanity";
-import { Project } from "@/lib/types";
 import { client } from "@/sanity/lib/client";
-import { urlForImage } from "@/sanity/lib/image";
-
-console.log("Sanity Config:", {
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
-  apiVersion: process.env.NEXT_PUBLIC_SANITY_API_VERSION,
-});
 
 export const links = [
   {
@@ -155,13 +146,6 @@ export async function getProjects() {
 
   try {
     const projects = await client.fetch(query);
-    console.log(`Found ${projects.length} projects:`, projects);
-
-    if (!projects.length) {
-      console.warn("No projects found in Sanity");
-      return [];
-    }
-
     return projects.map((project: any) => ({
       ...project,
       imageUrl: project.imageData?.url || null,
@@ -169,7 +153,6 @@ export async function getProjects() {
       imageHeight: project.imageData?.dimensions?.height || 1080,
     }));
   } catch (error) {
-    console.error("Error fetching projects:", error);
     return [];
   }
 }
