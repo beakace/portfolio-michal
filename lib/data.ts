@@ -7,6 +7,7 @@ import { BsWordpress } from "react-icons/bs";
 import blogSS24 from "@/public/blog-ss24.png";
 import nieziemsko from "@/public/nieziemsko.png";
 import chordon from "@/public/chordon-app.png";
+import { client } from "@/sanity/lib/client";
 
 export const links = [
   {
@@ -129,3 +130,29 @@ export const skillsData = [
   "Prisma",
   "Framer Motion",
 ] as const;
+
+export async function getProjects() {
+  const query = `*[_type == "project"] | order(_createdAt asc) {
+    _id,
+    title,
+    description,
+    tags,
+    "imageData": image.asset->{
+      url,
+      "dimensions": metadata.dimensions
+    },
+    href
+  }`;
+
+  try {
+    const projects = await client.fetch(query);
+    return projects.map((project: any) => ({
+      ...project,
+      imageUrl: project.imageData?.url || null,
+      imageWidth: project.imageData?.dimensions?.width || 1920,
+      imageHeight: project.imageData?.dimensions?.height || 1080,
+    }));
+  } catch (error) {
+    return [];
+  }
+}
