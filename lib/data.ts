@@ -7,7 +7,9 @@ import { BsWordpress } from "react-icons/bs";
 import blogSS24 from "@/public/blog-ss24.png";
 import nieziemsko from "@/public/nieziemsko.png";
 import chordon from "@/public/chordon-app.png";
-import { client } from "@/sanity/lib/client";
+// Local data source only – no Sanity client
+import wzrokOk from "@/public/wzrokok.png";
+import saraStudio from "@/public/sarastudiowokalne.png";
 
 export const links = [
   {
@@ -64,6 +66,22 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Sara Studio Wokalne",
+    description:
+      "Landing page for a vocal coach. Designed and developed by me.",
+    tags: ["React", "Next.js", "Tailwind"],
+    imageUrl: saraStudio,
+    href: "https://www.sarastudiowokalne.pl/",
+  },
+  {
+    title: "Wzrok Ok! Sklep",
+    description:
+      "Ecommerce shop built on WordPress with a focus on eye care products.",
+    tags: ["Wordpress", "WooCommerce"],
+    imageUrl: wzrokOk,
+    href: "https://wzrokok.pl/",
+  },
   {
     title: "Nieziemsko",
     description:
@@ -132,27 +150,11 @@ export const skillsData = [
 ] as const;
 
 export async function getProjects() {
-  const query = `*[_type == "project"] | order(_createdAt asc) {
-    _id,
-    title,
-    description,
-    tags,
-    "imageData": image.asset->{
-      url,
-      "dimensions": metadata.dimensions
-    },
-    href
-  }`;
-
-  try {
-    const projects = await client.fetch(query);
-    return projects.map((project: any) => ({
-      ...project,
-      imageUrl: project.imageData?.url || null,
-      imageWidth: project.imageData?.dimensions?.width || 1920,
-      imageHeight: project.imageData?.dimensions?.height || 1080,
-    }));
-  } catch (error) {
-    return [];
-  }
+  // Map local data to the Project type shape expected by the UI
+  return projectsData.map((project, index) => ({
+    _id: String(index + 1),
+    ...project,
+    imageWidth: 1920,
+    imageHeight: 1080,
+  }));
 }
