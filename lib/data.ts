@@ -154,6 +154,8 @@ export async function getProjects() {
   return projectsData.map((project, index) => ({
     _id: String(index + 1),
     ...project,
+    // Ensure tags is a mutable array to satisfy Project type
+    tags: [...project.tags],
     imageWidth: 1920,
     imageHeight: 1080,
   }));
