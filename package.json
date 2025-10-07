@@ -39,5 +39,9 @@
     "@types/react-vertical-timeline-component": "^3.3.3",
     "next-sanity": "^9.8.59",
     "sanity": "^3.76.3"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10"
   }
 }
